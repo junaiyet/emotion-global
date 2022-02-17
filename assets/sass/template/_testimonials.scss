@@ -1,0 +1,166 @@
+.testimonials{
+    background: url(../images/hero-bg-2.jpg) no-repeat center;
+    padding: 100px 0  10px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background:hsla(0, 0%, 0%, 0.4);
+    }
+    .vid-area{
+        position: relative;
+        z-index: 1;
+    
+        .play-button {
+            margin-bottom: 15px;
+            background-color:rgba(177, 151, 119, 0.569);
+            width: 100px;
+            height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+            border-radius: 50px;
+        
+            &:hover{
+                border: 1px solid $white;
+            }
+         
+            i{
+                color: #fff;
+                font-size: 32px;
+            }
+
+        }
+
+    }
+
+        .testimonials-box {
+            position: relative;
+            z-index: 1;
+            background: #272727;
+            padding: 60px 45px;
+            margin-bottom: -90px;
+            .testimonial-headding{
+                h4 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: $white;
+                    letter-spacing: 5px;
+                    border-bottom: 1px solid $tertiary-color;
+                    padding-bottom: 15px;
+                    text-transform: uppercase;
+                }
+            }
+        .item{
+            position: relative;
+            .info {
+                text-align: left;
+                margin: 30px 0 15px 0;
+                 .author-img {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    float: left;
+                    overflow: hidden;
+                      img {
+                       
+                        width: 100%;
+                    }
+                }
+               .cont {
+                    margin-left: 70px;
+                    h6 {
+                        font-size: 16px;
+                        margin-bottom: 0px;
+                        padding-top: 7px;
+                        font-weight: 400;
+                        font-family: 'Didact Gothic', sans-serif;
+                        color: $primary-color;
+                        letter-spacing: 0;
+                    }
+                  span {
+                        font-size: 16px;
+                        color: $secondery-color;
+                        margin-right: 5px;
+                        line-height: 1.25em;
+                    }
+                }
+            } 
+             .quote {
+                position: absolute;
+                right: 15px;
+                top: 60px;
+                width: 100px;
+                margin: 0 auto 30px;
+                opacity: .05;
+            }
+        } 
+        .slick-dots {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            li{
+                display: inline-block;
+                button{
+                    font-size: 0;
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 3px;
+                    border-radius: 50%;
+                    background: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    position: relative;
+                    cursor: pointer;
+                    outline: 0;
+                }
+              
+            }
+            .slick-active button{
+                border: 1px solid $primary-color;
+            }
+        }
+        }
+    
+}
+
+
+@include mobile{
+    .testimonials{
+    
+            background-attachment: scroll;
+       
+        .testimonials-box {
+    
+            margin: 25px 0 90px 0;
+            padding: 35px 20px;
+         .testimonial-headding{
+            h4 {
+                font-size: 19px;
+             
+            }
+         }
+        }
+    }
+}
+@include tablet{
+    .testimonials {
+        padding: 50px 0  10px 0;
+     .vid-area{
+        .play-button {
+            width: 85px;
+            height: 85px;
+             i {
+                font-size: 24px;
+            }
+  
+        }
+     } 
+       
+    }
+}

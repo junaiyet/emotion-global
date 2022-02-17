@@ -1,0 +1,19 @@
+.clients{
+    background-color: $tertiary-color;
+    padding: 15px 0;
+    position: relative;
+    .clients-logo {
+        opacity: 1;
+        line-height: 0;
+        img {
+            display: block;
+            width: 80%;
+           &:hover {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                -webkit-transition: all .5s;
+                transition: all .5s;
+            }
+        }
+    }
+} 

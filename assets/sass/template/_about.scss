@@ -1,0 +1,46 @@
+.about{
+     .about-img{
+        position: relative;
+        .img {
+            padding: 0 15px 30px 30px;
+            position: relative;
+            img{
+                position: relative;
+                z-index: 2;
+                background: #272727;
+                transition: .4s;
+                &:hover{
+                    transform: scale(0.95);
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 30px;
+                left: 0;
+                right: 45px;
+                bottom: 0;
+                border: 1px solid #323232;
+            }
+        }
+        .about-img-2 {
+            width: 40% !important;
+            position: absolute;
+            bottom: 0px;
+            right: 45px;
+            z-index: 3;
+            padding: 20px 15px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+            letter-spacing: 5px;
+            font-size: 13px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+        .about-buro {
+            background: #323232;
+        }
+    }
+}

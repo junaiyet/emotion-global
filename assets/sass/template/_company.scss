@@ -1,0 +1,37 @@
+.company{
+    padding-bottom: 100px;
+    .item{
+
+        img{
+            width: 80%;
+            height: 50px;
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 80px;
+      li {
+            display: inline-block;
+        }
+        button {
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            margin: 0 3px;
+            border-radius: 50%;
+            background: transparent;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            cursor: pointer;
+            outline: 0;
+        }
+        .slick-active button {
+            border: 
+            3px solid #b19777;
+        }
+    }
+   
+}

@@ -1,0 +1,128 @@
+.services {
+    .item {
+        padding: 60px 30px;
+        margin-bottom: 30px;
+        position: relative;
+        transition: .4s;
+        &:hover {
+            background-color: $tertiary-color;
+
+            .line {
+
+                &:after {
+
+                    width: 100%;
+
+                }
+            }
+            .numb {
+                color: transparent;
+                -webkit-text-stroke: 1px rgba(177, 151, 119, 0.5);
+        }
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+    }
+     
+
+        h5 {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 15px;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .line {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 5px;
+
+            &:after {
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                width: 50px;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.1);
+                content: '';
+                transition-property: all;
+                transition-duration: 0.4s;
+                transition-timing-function: ease-in-out;
+
+            }
+        }
+
+        .numb {
+            font-size: 40px;
+            font-weight: 600;
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+            line-height: 1em;
+        }
+     
+    }
+
+    .arrows{
+        text-align: center;
+       .down-arrow-{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 30px ;
+           i{
+            color: $primary-color;
+            transition: all .3s linear;
+            margin-left: 50px;
+        }
+       }
+        
+       
+    }
+    .service-none{
+        display: none;
+    }
+    .service-show{
+        display: block;
+    }
+    .down-arrow-roted {
+        transform: rotate(180deg);
+    }
+}
+
+
+@include tablet{
+    .services{
+        .item {
+            padding: 30px 30px;
+            margin-bottom: 0;
+            .image {
+         
+                justify-content: start;
+                 img {
+                    width: 150px;
+          
+                }
+            }
+            h5 {
+                font-size: 30px;
+            }
+          .numb {
+                bottom: 20px;
+            }
+        }
+    } 
+
+
+}

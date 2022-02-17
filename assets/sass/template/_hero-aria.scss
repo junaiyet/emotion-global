@@ -1,0 +1,133 @@
+.hero-aria{
+    position: relative;
+
+
+    .hero-bg{
+
+        position: relative;
+        background: url(../images/banner/banner.png)  ;
+        background-size: 100% 100% !important;
+        padding: 300px 0px 150px 0;
+        text-align: right;
+        height: 100vh;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background:hsla(0, 0%, 0%, 0.4);
+        }
+        // .hero-corner-aria{
+        //     position: absolute;
+        //     background: red;
+        //     width: 100%;
+        //     height: 100%;
+        //     left: 0;
+        //     top: 0;
+        //     .corner{
+        //         position: relative;
+        //         .hero-corner{
+        //             position: absolute;
+        //             width: 70px;
+        //             height: 70px;
+        //             z-index: 21;
+        //             background: beige;
+        //             top: 0;
+        //             right: 0;
+                 
+        //         }
+        //         .hero-corner2 {
+        //             position: absolute;
+        //             bottom: 0;
+        //             right: 0;
+        //             bottom: 50px;
+        //             right: 50px;
+        //             background: rgb(0, 51, 99);
+        //             border-bottom: 1px solid;
+        //             border-right: 1px solid;
+        //         }
+        //     }
+           
+        // }
+      
+    }
+    .hero-bg-two{
+        background: url(../images/banner/banner-two.png)  ;  
+    }
+    .hero-bg-three{
+        background: url(../images/banner/banner-three.png)  ;  
+    }
+   .hero-bg-opacity{
+    opacity: .1;
+    background: url(../images/banner.jpg)  ;  
+}
+    .arrows{
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        z-index: 9;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: transparent;
+        border-radius: 100%;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 12px;
+        margin-right: 3px;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transform: scale(1);
+        transition: all .4s;
+
+        &:hover{
+            transform: scale(0.9);
+           background: transparent;
+           border: 1px solid $primary-color;
+           color: $primary-color;
+        }
+
+    }
+    .nextarrow{
+        left: 70px;
+    }
+    
+}
+@include mobile {
+    .hero-aria{
+        .hero-bg {
+     
+            padding: 150px 0px 130px 0;
+            background-size: cover !important;
+            height: 60vh;
+        }
+        .socail-icon-aria {
+            margin-top: 372px;
+            margin-left: 15px;
+        }
+    } 
+ 
+
+
+}
+@include tablet{
+    .hero-caption{
+        font-size: 20px;
+        margin-right: 10px;
+        
+    line-height: 1.5rem;
+    }
+    .hero-hadding{
+        font-size: 30px;
+        letter-spacing: 10px;
+        line-height: 1.3em;
+      margin-bottom: 12px;
+    }
+       
+    .socail-icon-aria {
+        display: none;
+            }
+          
+}

@@ -1,0 +1,101 @@
+.news{
+    .item {
+        position: relative;
+        overflow: hidden;
+        margin: 0 18px 30px 18px;
+        transition: .4s;
+        &:hover{
+             .content {
+                bottom: 0;
+            }
+            .img{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .img{
+            position: relative;
+            overflow: hidden;
+            img{
+                display: block;
+                width: 100%;
+                transition: .4s;
+            }
+        }
+          .content {
+            margin: -120px 20px 75px;
+            padding: 15px 15px 25px 15px;
+            background-color: $tertiary-color;
+            border: 1px solid $tertiary-color;
+            border-radius: 0;
+            overflow: hidden;
+            -webkit-transition: .2s cubic-bezier(.3, .58, .55, 1);
+            transition: .2s cubic-bezier(.3, .58, .55, 1);
+            bottom: -55px;
+            position: relative;
+           .category {
+                font-size: 12px;
+                font-weight: 400;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+               a{
+                &:last-child {
+                    margin-right: 0;
+                }
+               }
+            }
+            h5{
+                a {
+                    color: $primary-color;
+                    font-size: 25px;
+                    font-family: $primary-fonts;
+                    font-weight: 300;
+                    margin-bottom: 0px;
+                    letter-spacing: 1px;
+                    text-transform: capitalize;
+                }
+            } 
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        li{
+            display: inline-block;
+            button{
+                font-size: 0;
+                width: 8px;
+                height: 8px;
+                margin: 0 3px;
+                border-radius: 50%;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                position: relative;
+                cursor: pointer;
+                outline: 0;
+            }
+          
+        }
+        .slick-active button{
+            border: 1px solid $primary-color;
+        }
+    }
+}
+@include tablet{
+    .news{
+        .item{
+            .content{
+                h5{
+                    a {
+                   
+                        font-size: 14px;
+                    
+                     
+                    }
+                } 
+            } 
+        } 
+    } 
+}

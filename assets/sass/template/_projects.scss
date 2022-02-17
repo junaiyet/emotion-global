@@ -1,0 +1,100 @@
+.projects{
+    .items{
+        position: relative;
+        overflow: hidden;
+          margin: 0 18px 30px 18px;
+          &:hover{
+              .content{
+                  bottom: 0;
+                  .line {
+                    width: 100%;
+                    transition-property: all;
+                    transition-duration: 0.8s;
+                    transition-timing-function: ease-in-out;
+                }
+              }
+            .img{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+          }
+        .img{
+            position: relative;
+            overflow: hidden;
+            height: 350px;
+            img{
+                width: 100%;
+                height: 100%;
+                transition: .4s;
+            }
+        }
+        .content {
+            padding: 30px 15px;
+            position: absolute;
+            bottom: -58px;
+            left: 0;
+            width: 100%;
+            transition: all .3s;
+            text-align: center;
+            z-index: 20;
+            height: auto;
+            box-sizing: border-box;
+            transition: .4s;
+          background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .01) 2%, rgba(0, 0, 0, .75) 90%);
+         h6{
+            a {
+               display: inline-block;
+                 color: $primary-color;
+            
+            }
+         } 
+         h5{
+            a {
+               display: inline-block;
+                 color: $white;
+            
+            }
+         } 
+            .line {
+            text-align: center;
+            height: 1px;
+            width: 60px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 auto 30px;
+        }
+         i {
+            color: #fff;
+            font-size: 20px;
+            transition: .4S;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        li{
+            display: inline-block;
+            button{
+                font-size: 0;
+                width: 8px;
+                height: 8px;
+                margin: 0 3px;
+                border-radius: 50%;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                position: relative;
+                cursor: pointer;
+                outline: 0;
+            }
+          
+        }
+        .slick-active button{
+            border: 1px solid $primary-color;
+        }
+    }
+}
